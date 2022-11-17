@@ -13,14 +13,13 @@ function Carousel() {
   }, []);
 
   return (
-    <div className="carousel">
+    <div className="carousel2">
       <div
         id="carouselExampleDark"
         class="carousel carousel-dark slide"
         data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="10000">
-            <div class="container">
               <div class="row" id="row1">
                 {benda.splice(0, 4).map((item) => (
                   <div className="col">
@@ -36,9 +35,8 @@ function Carousel() {
                 ))}
               </div>
             </div>
-          </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <div class="container">
+   
               <div class="row" id="row2">
                 {benda.splice(0, 4).map((item) => (
                   <div className="col">
@@ -54,9 +52,9 @@ function Carousel() {
                 ))}
               </div>
             </div>
-          </div>
+  
           <div class="carousel-item">
-            <div class="container">
+            {/* <div class="container"> */}
               <div class="row" id="row3">
                 {benda.splice(0, 4).map((item) => (
                   <div className="col">
@@ -72,7 +70,7 @@ function Carousel() {
                 ))}
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </div>
         <button
           class="carousel-control-prev"

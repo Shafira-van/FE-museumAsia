@@ -40,9 +40,11 @@
   object-fit: cover;
   padding: 0vw;
 }
-.navbar-brand a{
+
+.navbar-brand a {
   font-size: 1.6vw;
 }
+
 .logo {
   display: flex;
   align-items: center;
@@ -58,6 +60,7 @@
   flex-direction: row;
   align-items: center;
 }
+
 .navbar ul {
   display: flex;
   flex-direction: row;
@@ -72,10 +75,12 @@
 .nav-item a:hover {
   color: #66ffa8;
 }
-.nav-item a#active{
+
+.nav-item a#active {
   /* border-bottom: #66ffa8 solid 0.4vw; */
   color: #66ffa8;
 }
+
 .profile {
   margin-left: 2vw;
 }
@@ -114,7 +119,7 @@ header {
   padding: 0 1vw;
 }
 
-#textHeader{
+#textHeader {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -135,24 +140,36 @@ header {
 }
 
 /* carousel */
-.carousel-inner .row {
+.carousel-item {
+  margin: 0 0vw;
+}
+
+.carousel-inner .col {
   display: flex;
-  margin: -1vw -6vw;
+  justify-content: center;
+  margin: 0vw 0vw;
+  padding: 0vw;
+  height: 30vw;
+  color: white;
+  position: relative;
+  /* width: 20vw */
 }
 
 .carousel-inner .card {
   background-color: #a2aab0;
-  /* width: 20vw; */
-  margin: 1vw;
-  /* height: 30vw; */
+  margin: 0vw;
+  padding: 0vw;
   color: white;
   position: relative;
+  width: 20vw;
+  display: flex;
+  justify-content: center;
 }
 
 .carousel-inner img {
   height: 18vw;
   object-fit: cover;
-
+  width: auto;
 }
 
 .carousel-inner .card h5 {
@@ -166,15 +183,17 @@ header {
 }
 
 .carousel-inner .card a {
-  font-size: 16px;
-  margin: 0vw 13%;
+  font-size: 1.4vw;
+  display: flex;
+  justify-content: center;
   width: 60%;
-  text-align: center;
+  padding: 0.2vw 0.4vw;
   position: absolute;
-  bottom: 2vw;
+  left: 0;
   background-color: #4c586f;
   border: 1px solid #4c586f;
-  border-radius: 2vw;
+  border-radius: 1vw;
+  margin: 5% 20%;
 }
 
 .carousel-inner .card-text {
@@ -183,13 +202,11 @@ header {
 }
 
 .carousel-control-next {
-  padding-left: 4vw;
-
+  visibility: hidden;
 }
 
 .carousel-control-prev {
-  padding-right: 4vw;
-
+  visibility: hidden;
 }
 
 
@@ -207,7 +224,7 @@ header {
   margin: 0 11vw;
 }
 
- .develover .container-dev .card {
+.develover .container-dev .card {
   background-color: #a2aab0;
   width: 82vw;
 }
@@ -257,9 +274,9 @@ header {
 
 /* collection */
 /* cari */
-.museum{
-  margin :0vw 3vw 2vw 3vw;
-  display:flex;
+.museum {
+  margin: 0vw 3vw 2vw 3vw;
+  display: flex;
   flex-direction: column;
 }
 
@@ -268,7 +285,7 @@ header {
   justify-content: flex-end;
   height: 100%;
   width: 100%;
-  margin: 3vw 0vw 1vw 2vw ;
+  margin: 3vw 0vw 1vw 2vw;
   border-radius: 0.6vw;
   font-size: 1.6vw;
 }
@@ -278,7 +295,7 @@ header {
   width: 22vw;
 }
 
-#form .btn { 
+#form .btn {
   width: auto;
   margin: 0vw 4vw 0vw 0vw;
 }
@@ -301,55 +318,63 @@ header {
 }
 
 /* daftar benda */
-#daftarBarang{
+#daftarBarang {
   margin: 0vw 2vw;
   width: 100%;
   display: flex;
-    flex-flow: row wrap;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: flex-start; 
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
 }
 
-#daftarBarang .col{
+#daftarBarang .col {
   margin: 0vw;
- 
+
 }
 
-#daftarBarang .card{
+#daftarBarang .card {
   background-color: rgb(203, 197, 193, 0.6);
   color: #3e3e3b;
   width: 20vw;
-  height: 40vw;
+  height: 39vw;
   margin-right: 0vw;
   margin: 1vw 1vw;
   padding: 0;
   position: relative;
+  border-radius: 1vw;
 }
 
 #daftarBarang .card img {
-  height: 14vw;
+  border-radius: 1vw 1vw 0vw 0vw;
+  /* border-radius: 1vw 1vw ; */
+  height: 15vw;
+  object-fit: cover;
 }
 
-#daftarBarang .card h5{
+#daftarBarang .card h5 {
   color: #3e3e3b;
   text-align: left;
   font-size: 2vw;
+  margin: 0vw;
 }
 
-#daftarBarang .card p{
+#daftarBarang .card p {
   color: #3e3e3b;
   text-align: left;
   font-size: 1.4vw;
+  margin: 0.2vw;
 }
 
 #daftarBarang .card a {
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom:1vw;
+  bottom: 1vw;
   width: 14vw;
+  border-radius: 1vw;
 }
+
 /* footer */
 footer {
   padding: 0vw 2vw 0vw 2vw;
@@ -397,93 +422,181 @@ footer p {
     font-size: 3.2vw;
   }
 
+  .carousel-inner .row {
+    display: flex;
+    padding: 0vw;
+    margin: 0vw;
+  }
+
   .carousel-inner .col {
-    width: auto;
-    padding: 0 0vw;
-    margin: 0;
-    height: auto;
+    padding: 0vw;
+    margin: 0vw;
   }
 
   .carousel-inner .card {
-    height: 31vw;
+    width: 19vw;
+    height: 28vw;
+    margin: 0vw;
+    display: flex;
+    padding: 0vw;
+    flex-direction: column;
   }
 
-  .carousel-inner .card img {
-    margin-bottom: 0vw;
-    height: 17vw;
-    width: auto;
-
+  .carousel-inner img {
+    height: 14vw;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    /* width: 2vw; */
+    /* border-radius: 2vw; */
   }
 
   .carousel-inner .card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-    padding: 3px 4px 2px 4px;
-    text-align: justify;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+    margin: 1vw;
+    padding: 0;
+
 
   }
 
-  #cardDesc {
-    display: none;
-  }
-
-  .carousel-inner h5 {
-    margin-bottom: 0;
-  }
-
-  .carousel-inner .card-body p {
+  .carousel-inner .card h5 {
     font-size: 2vw;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-inner .card p {
+    font-size: 1.4vw;
+    text-align: center;
   }
 
   .carousel-inner .card a {
-    font-size: 2vw;
-    position: absolute;
-    bottom: 2vw;
-    width: auto;
-    height: auto;
-    padding: 0vw 1vw;
-  }
-
-  .carousel-control-prev-icon {
-    visibility: hidden;
-  }
-
-  .carousel-control-next-icon {
-    visibility: hidden;
-  }
-
-  .container-dev .card {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.8vw;
+    width: 14vw;
+    margin: 0vw 12%;
+    padding: 0vw;
+    bottom: 1vw;
+  }
+
+  .carousel-inner .card-text {
+    margin: 0vw;
 
   }
 
-  .col-md-4 {
-    width: 40%;
+  .carousel-control-next {
+    visibility: hidden;
+
   }
 
-  .col-md-8 {
-    width: 60%;
+  .carousel-control-prev {
+    visibility: hidden;
+
   }
 
-  .container-dev h5 {
-    margin-bottom: 1vw;
+  .develover .col-md-4 {
+    margin: 0vw;
+    width: 25%;
+
   }
 
-  .container-dev p {
+  .develover .col-md-8 {
+    width: 50%;
+  }
+
+  .develover .col-md-4 img {
+    display: flex;
+    width: 20vw;
+    margin: 0;
+    height: 20vw;
+    object-fit: cover;
+  }
+
+  .develover .container-dev #card-body {
+    width: 40vw;
+    text-align: left;
+    color: white;
+    margin: 0vw;
+    padding: 1vw;
+  }
+
+  #Informatika .col-md-4 img {
+    width: 20vw;
+    border-radius: 0vw;
+  }
+
+  .develover .container-dev h5 {
+    font-size: 3vw;
+    color: white;
+    font-weight: bold;
+  }
+
+  .develover .container-dev p {
+    font-size: 2vw;
+    padding: 0vw;
+    margin: 0vw;
+  }
+
+  #daftarBarang .card .card-body {
+    padding: 1vw;
+  }
+
+  #daftarBarang .card a {
+    margin: 0 1.6vw;
+    padding: 0vw;
+    width: 14vw;
+    font-size: 1.8vw;
+    bottom: 1.4vw;
+
+
+  }
+
+
+  #form input {
+    margin-right: 2vw;
     font-size: 2.4vw;
+    height: 4vw;
+    width: 34vw;
+  }
+
+  #form .btn {
+    width: 11vw;
+    font-size: 2.4vw;
+    padding: 0;
+    height: 4vw;
+    margin: 0vw 4vw 0vw 0vw;
+  }
+
+  /* button negara */
+
+  .button_negara {
+    margin: 2vw 0vw;
+  }
+
+  .button_negara button {
+    margin: 1vw;
+    padding: 0vw 1vw;
+    width: auto;
+    font-size: 2.4vw;
+  }
+
+  .btn:hover {
+    color: #4c586f;
+    background-color: #ebeced;
   }
 
   .footer {
     font-size: 2.4vw;
-    /* display: flex; */
-    /* flex-direction: column; */
-
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width : 1032px) {
+@media only screen and (min-width: 768px) and (max-width : 1281px) {
   .navbar-nav li {
     font-size: 2vw;
   }
@@ -492,43 +605,60 @@ footer p {
     font-size: 2vw;
   }
 
-  .carousel-control-prev-icon {
-    visibility: hidden;
-  }
-
-  .carousel-control-next-icon {
-    visibility: hidden;
-  }
-
-  .carousel-inner .col {
-    width: 4vw;
-    padding: 0 0vw;
-    margin: 0;
-    height: auto;
-  }
-
-  .carousel-inner .card-body {
+  .carousel-inner .row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-    padding: 3px 4px 2px 4px;
-    text-align: justify;
-
-  }
-
-  #cardDesc {
-    display: none;
+    padding: 0vw;
+    margin: 1vw;
   }
 
   .carousel-inner .card {
-    height: 34vw;
+    background-color: #a2aab0;
+    width: 18vw;
+    height: 27vw;
+    margin: 2vw 0vw 2vw 0vw;
+    /* padding: ; */
+    color: white;
+    position: relative;
+    /* border-radius: 2vw ; */
+  }
+
+  .carousel-inner img {
+    height: 14vw;
+    object-fit: cover;
+    /* width: 2vw; */
+    /* border-radius: 2vw; */
+
+  }
+
+  .carousel-inner .card h5 {
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .carousel-inner .card p {
+    font-size: 1.4vw;
+    text-align: center;
   }
 
   .carousel-inner .card a {
-    font-size: 1.8vw;
-    width: auto;
-    height: auto;
-    padding: 0.2vw 1vw;
+    display: flex;
+    justify-content: center;
+    width: 12vw;
+    bottom: 1vw;
+  }
+
+  .carousel-inner .card-text {
+    margin: 0vw;
+
+  }
+
+  .carousel-control-next {
+    visibility: hidden;
+
+  }
+
+  .carousel-control-prev {
+    visibility: hidden;
+
   }
 }
