@@ -20,14 +20,17 @@ function Navbar() {
               </CustomLink>
             </li>
             <li className="nav-item">
-              <CustomLink
-                to={"/collection"}
-                className="nav-link">
+              <CustomLink to={"/collection"} className="nav-link">
                 Collection
               </CustomLink>
             </li>
             <li className="nav-item">
-              <CustomLink to={"/logout"} className="nav-link" >
+              <CustomLink to={"/faq"} className="nav-link">
+                Faq
+              </CustomLink>
+            </li>
+            <li className="nav-item">
+              <CustomLink to={"/logout"} className="nav-link">
                 Logout
               </CustomLink>
             </li>

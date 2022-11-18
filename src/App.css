@@ -149,21 +149,26 @@ header {
   justify-content: center;
   margin: 0vw 0vw;
   padding: 0vw;
-  height: 30vw;
-  color: white;
+  height: 29vw;
+  color: #3e3e3b;
   position: relative;
   /* width: 20vw */
 }
 
 .carousel-inner .card {
-  background-color: #a2aab0;
   margin: 0vw;
   padding: 0vw;
-  color: white;
   position: relative;
   width: 20vw;
   display: flex;
   justify-content: center;
+}
+.carousel-inner .card-body {
+  background-color: #ebeced;
+  height: auto;
+  width: auto;
+  border-radius: 0vw 0vw 0.51vw 0.51vw;
+  color: #3e3e3b;
 }
 
 .carousel-inner img {
@@ -175,6 +180,7 @@ header {
 .carousel-inner .card h5 {
   font-size: 2vw;
   text-align: center;
+  font-weight: bold;
 }
 
 .carousel-inner .card p {
@@ -190,8 +196,8 @@ header {
   padding: 0.2vw 0.4vw;
   position: absolute;
   left: 0;
-  background-color: #4c586f;
-  border: 1px solid #4c586f;
+  background-color: #3e3e3b;
+  border: 1px solid #3e3e3b;
   border-radius: 1vw;
   margin: 5% 20%;
 }
@@ -236,9 +242,16 @@ header {
   border-radius: 0;
 }
 
-.develover .container-dev #card-body {
+.develover .container-dev #card-body h5{
   text-align: left;
   color: white;
+    text-shadow: 1vw 1vw 1vw #6c757d;
+}
+.develover .container-dev #card-body p{
+  text-align: left;
+  color: white;
+  text-shadow:0.5vw 0.5vw 0.5vw #6c757d;
+  font-weight: 600;
 }
 
 .develover .container-dev #rowDev {
@@ -252,7 +265,11 @@ header {
   flex-direction: row-reverse;
 }
 
-#Informatika #card-body {
+#Informatika #card-body p{
+  text-align: right;
+}
+
+#Informatika #card-body h5 {
   text-align: right;
 }
 
@@ -334,7 +351,7 @@ header {
 }
 
 #daftarBarang .card {
-  background-color: rgb(203, 197, 193, 0.6);
+  background-color: #ebeced;
   color: #3e3e3b;
   width: 20vw;
   height: 39vw;
@@ -357,6 +374,8 @@ header {
   text-align: left;
   font-size: 2vw;
   margin: 0vw;
+  font-weight: bold;
+
 }
 
 #daftarBarang .card p {
@@ -373,6 +392,49 @@ header {
   bottom: 1vw;
   width: 14vw;
   border-radius: 1vw;
+}
+
+/* faq */
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw 0vw;
+}
+
+.faq h1 {
+  text-align: center;
+  font-size: 6vw;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.faq h2 {
+  font-size: 2vw;
+}
+
+.accordion {
+  margin-bottom: 4vw;
+}
+.accordion-body {
+  text-align: left;
+}
+
+.accordion-item {
+  width: 50vw;
+  margin: 0vw;
+}
+
+.accordion-item button {
+  background-color: #6c757d;
+  border: 1px solid #a2aab0;
+  font-size: 2vw;
+  color: white;
+}
+
+.accordion-collapse {
+  background-color: #ebeced;
+  font-size: 1.6vw;
 }
 
 /* footer */
@@ -534,7 +596,7 @@ footer p {
   .develover .container-dev h5 {
     font-size: 3vw;
     color: white;
-    font-weight: bold;
+
   }
 
   .develover .container-dev p {
@@ -576,19 +638,84 @@ footer p {
   /* button negara */
 
   .button_negara {
-    margin: 2vw 0vw;
+    margin: 2vw 4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .button_negara button {
     margin: 1vw;
-    padding: 0vw 1vw;
+    padding: 0vw 1.4vw;
     width: auto;
-    font-size: 2.4vw;
+    font-size: 3.2vw;
+
   }
 
   .btn:hover {
     color: #4c586f;
     background-color: #ebeced;
+  }
+
+  #daftarBarang {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  #daftarBarang .card {
+    margin: 1vw 2vw;
+    height: 30vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #daftarBarang .card img {
+    width: 25vw;
+    height: auto;
+    border-radius: 1vw 0vw 0vw 1vw;
+  }
+
+  #daftarBarang .card-body {
+    margin: 1vw;
+  }
+
+  #daftarBarang .card-body h5 {
+    font-size: 3.4vw;
+  }
+
+  #daftarBarang .card-body p {
+    font-size: 2.8vw;
+  }
+
+  #daftarBarang .card-body a {
+    font-size: 2.8vw;
+    width: 20vw;
+    margin-bottom: 1vw;
+    margin-left: 0;
+
+  }
+
+  .accordion-item {
+    width: 60vw;
+
+  }
+
+  .accordion-header button {
+    font-size: 3vw;
+    margin: 0;
+  }
+
+  .accordion-body {
+    font-size: 2.4vw;
+
+  }
+
+  .accordion-body ul {
+    padding-left: 3.4vw;
+    margin-bottom: 0vw;
   }
 
   .footer {
