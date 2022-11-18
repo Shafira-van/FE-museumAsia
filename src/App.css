@@ -390,7 +390,7 @@ header {
   justify-content: center;
   position: absolute;
   bottom: 1vw;
-  width: 14vw;
+  width: auto;
   border-radius: 1vw;
 }
 
