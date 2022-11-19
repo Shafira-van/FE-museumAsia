@@ -199,7 +199,7 @@ header {
   background-color: #3e3e3b;
   border: 1px solid #3e3e3b;
   border-radius: 1vw;
-  margin: 5% 20%;
+  margin: 5% 16.5%;
 }
 
 .carousel-inner .card-text {
@@ -392,7 +392,7 @@ header {
   bottom: 1vw;
   width: auto;
   border-radius: 1vw;
-  
+
 }
 
 /* faq */
