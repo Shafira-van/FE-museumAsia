@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Item({ id, img, name, provinsi, desc, url }) {
   return (
@@ -12,8 +13,17 @@ function Item({ id, img, name, provinsi, desc, url }) {
           Show more
         </a>
       </div>
-      </div>
+    </div>
   );
 }
+
+Item.propTypes = {
+  id: PropTypes.number,
+  img: PropTypes.string,
+  name: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  provinsi: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  desc: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  url: PropTypes.string,
+};
 
 export default Item;
