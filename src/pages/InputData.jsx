@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addBenda} from "../redux/action/dataBendaAction";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 // import { Container, Form, FormGroup, Label, Input, Button } from "reactstrap";
 
