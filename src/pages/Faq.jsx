@@ -1,8 +1,11 @@
 import React from 'react'
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 function Faq() {
   return (
     <div className='faq'>
+      <Navbar />
         <h1>FAQ</h1>
         <h2>Frequently Ask Question</h2>
         <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -81,6 +84,7 @@ function Faq() {
             </div>
           </div>
         </div>
+        <Footer />
     </div>
   );
 }

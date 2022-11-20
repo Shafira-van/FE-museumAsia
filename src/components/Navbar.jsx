@@ -15,7 +15,7 @@ function Navbar() {
         <div className="isiKonten">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <CustomLink to={"/"} className="nav-link" aria-current="page">
+              <CustomLink to={"/home"} className="nav-link" aria-current="page">
                 Home
               </CustomLink>
             </li>
@@ -30,7 +30,7 @@ function Navbar() {
               </CustomLink>
             </li>
             <li className="nav-item">
-              <CustomLink to={"/logout"} className="nav-link">
+              <CustomLink to={"/."} className="nav-link">
                 Logout
               </CustomLink>
             </li>

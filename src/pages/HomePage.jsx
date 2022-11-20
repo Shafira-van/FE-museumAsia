@@ -4,17 +4,16 @@ import Header from '../components/Header'
 import Carousel from '../components/Carousel'
 import Developer from '../components/Developer'
 import Footer from '../components/Footer'
+import NavHomePage from '../components/NevHomePage'
 
-function Home() {
+function HomePage() {
   return (
-    <div className='Home'>
-      <Navbar />
+    <div className='Home Page'>
+      <NavHomePage />
       <Header />
-      <Carousel />
       <Developer />
-      <Footer />
     </div>
   )
 }
 
-export default Home
+export default HomePage
