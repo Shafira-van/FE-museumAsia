@@ -297,6 +297,7 @@ header {
   flex-direction: column;
 }
 
+
 #form {
   display: flex;
   justify-content: flex-end;
@@ -307,14 +308,80 @@ header {
   font-size: 1.6vw;
 }
 
+.inputData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputData button {
+  width: 16vw;
+  height: 4vw;
+  margin-top: 3vw;
+  margin-left: 3vw;
+  background-color: #6c757d;
+  color: white;
+  font-size: 2vw;
+  border-radius: 1vw;
+  border: 1px solid #6c757d;
+}
+
 #form input {
   margin-right: 2vw;
   width: 22vw;
+  display: flex;
+  align-items: center;
 }
 
 #form .btn {
   width: auto;
   margin: 0vw 4vw 0vw 0vw;
+}
+
+/* tambah */
+.tambah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vw 0vw; 
+  margin: 0 15vw;
+}
+
+
+.formInput{
+  color: black;
+  background-color: #ebeced;
+  border-radius: 2vw;
+  padding: 4vw 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80vw;
+}
+
+.formInput h2 {
+  align-self: center;
+}
+
+.formInput input,textarea{
+  width: 60vw;
+  margin-bottom: 1vw;
+  font-size: 2vw;
+}
+
+.formInput
+textarea {
+  height: 10vw;
+  margin-bottom: 1vw;
+}
+.formInput button {
+  margin-top: 1vw;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 /* button negara */
@@ -335,6 +402,8 @@ header {
 }
 
 /* daftar benda */
+
+
 #daftarBarang {
   margin: 0vw 2vw;
   width: 100%;
@@ -698,6 +767,7 @@ footer p {
     margin-left: 0;
 
   }
+
 
   .accordion-item {
     width: 60vw;

@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getBenda } from "../redux/action/dataBendaAction";
 import Item from "./Item";
+import { Link} from "react-router-dom";
 
 function DaftarBarang() {
   const dispatch = useDispatch();
@@ -14,33 +15,38 @@ function DaftarBarang() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setData( negara );
+    setData(negara);
     setNegara("");
-    setSort(negara)
-    
+    setSort(negara);
   };
 
   useEffect(() => {
     dispatch(getBenda());
   }, []);
 
+  const addData = () => {};
+
   return (
     <div className="museum">
-      <form className="d-flex" id="form" onSubmit={handleSubmit}>
-        <input
-          className="form-control me-2"
-          id="cari"
-          type="search"
-          placeholder="Diawali huruf kapital..."
-          aria-label="Search"
-          value={negara}
-          onChange={(e) => setNegara(e.target.value)}
-        />
-        <button className="btn btn-outline-secondary" type="submit">
-          Search
-        </button>
-      </form>
-
+      <div className="inputData">
+        <Link to={"inputdata"} className="nav-link">
+          <button onClick={addData()}>Add Data+</button>
+        </Link>
+        <form className="d-flex" id="form" onSubmit={handleSubmit}>
+          <input
+            className="form-control me-2"
+            id="cari"
+            type="search"
+            placeholder="Diawali huruf kapital..."
+            aria-label="Search"
+            value={negara}
+            onChange={(e) => setNegara(e.target.value)}
+          />
+          <button className="btn btn-outline-secondary" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
       <div className="button_negara">
         <button
           type="button"
@@ -107,8 +113,7 @@ function DaftarBarang() {
                 );
               }
             })
-          :null
-          }
+          : null}
 
         {benda.length > 0 && sort === "all"
           ? benda.map((item) => {

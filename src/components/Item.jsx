@@ -2,7 +2,7 @@ import React from "react";
 
 function Item({ id, img, name, provinsi, desc, url }) {
   return (
-    <div className="card" >
+    <div className="card" key={id}>
       <img src={img} className="card-img-top" alt="..." />
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
